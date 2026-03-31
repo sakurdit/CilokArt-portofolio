@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a; /* Warna background gelap */
+    color: white;
+    font-family: 'Times New Roman', serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    height: 80vh;
+    position: relative;
+}
+
+.top-line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-bottom: 40px;
+}
+
+.content {
+    display: flex;
+    height: 100%;
+}
+
+/* BAGIAN KIRI */
+.hero-section {
+    flex: 2;
+    position: relative;
+}
+
+.image-wrapper {
+    width: 85%;
+    height: 400px;
+    background-color: #333;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
+}
+
+.text-portfolio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 100px;
+    font-weight: 300;
+    letter-spacing: -5px;
+    z-index: 2;
+}
+
+.brand-name {
+    position: absolute;
+    bottom: 80px;
+    right: 50px;
+    text-align: right;
+    z-index: 2;
+    line-height: 0.8;
+}
+
+.brand-name .cilok {
+    font-size: 120px;
+}
+
+.brand-name .art {
+    font-size: 120px;
+    padding-right: 20px;
+}
+
+.footer-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* BAGIAN KANAN */
+.sidebar {
+    flex: 0.5;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.present-box span {
+    font-family: Arial, sans-serif;
+    color: #aaa;
+}
+
+.present-box h3 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #8a6d8a; /* Warna ungu pudar sesuai desain */
+}
+
+.description .highlight {
+    margin-top: 20px;
+    color: #a370a3;
+    font-size: 22px;
+}
+
+/* RESPONSIVE SEDERHANA */
+@media (max-width: 768px) {
+    .content { flex-direction: column; }
+    .text-portfolio { font-size: 60px; }
+    .brand-name .cilok, .brand-name .art { font-size: 70px; }
+}
+
+
